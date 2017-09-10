@@ -8,3 +8,4 @@ copied from https://github.com/chenshuo/recipes/tree/master/protobuf, using c++1
 
 ### algorithm
 [Boyer Moore](./algorithm/boyer_moore.cc) string search algorithm
+[Manacher](./algorithm/manacher.cc) algorithm which find longest palindrome in linear time
