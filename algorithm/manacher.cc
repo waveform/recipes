@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-// return longest palindrome string
+// return longest palindrome string, time/space complexity is O(N)
 string manacher(const string& s) {
     int n = s.size();
     // build string from "CAAB" to "^#C#A#A#B#$"
@@ -14,7 +14,7 @@ string manacher(const string& s) {
     for (int i=0;i<n;i++) st[2*i+2] = s[i];
     // [i, right) half open half close iternval
     int right = 0, mid = 0, longest_len = 0, longest_mid = 0;
-    for (int i=1; i<st.size()-1; i++) {
+    for (int i=1; i<(int)st.size()-1; i++) {
         if (right > i) len[i] = min(right-i, len[2*mid-i]);
         else len[i] = 1;
         while (st[i+len[i]] == st[i-len[i]]) len[i]++;
