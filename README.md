@@ -13,3 +13,6 @@ copied from https://github.com/chenshuo/recipes/tree/master/protobuf, using c++1
 
 ## encode/decode
 * [Golomb-Rice](./encode/golomb_rice.cc) demo algorithm for Golomb-Rice encode/decode algorithm
+
+## util
+* [PyBitStream](./util/bitstream.py) Little-endian Friendly Bitstream Class
